@@ -46,7 +46,7 @@ def summarize_text(pdf_file, summary_length):
         return f"Error: {str(e)} \nPlease check file size and type!"
 
 
-
+#Gradio Interface
 input_component = gr.File(label="Upload PDF file")
 output_component = gr.Textbox(label="Summarized Text")
 summary_length_component = gr.Dropdown(label="Summary Length", choices=["Short", "Medium", "Long"])
